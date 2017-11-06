@@ -11,11 +11,13 @@ var fs = require('fs');
 
 module.exports = {
   pwd: function(input) {
-    return process.argv[1];
+    return process.cwd();
+    // return process.argv[1];
   },
 
   date: function(input) {
-    return new Date().toString();
+    return Date();
+    // return new Date().toString();
   },
 
   ls: function(input) {
