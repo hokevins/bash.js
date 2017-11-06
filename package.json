@@ -1,0 +1,22 @@
+{
+  "name": "nodeshell",
+  "version": "1.0.0",
+  "description": "cool node shell",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hokevins/bash.js.git"
+  },
+  "author": "Kevin Ho & Jeffrey Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hokevins/bash.js/issues"
+  },
+  "homepage": "https://github.com/hokevins/bash.js#readme",
+  "dependencies": {
+    "chalk": "^2.3.0"
+  }
+}
