@@ -1,4 +1,4 @@
-const commands = require('./commands.js');
+const commands = require('./commands.js'); // ./ required for modules we define ourselves rather than modules from npm install
 const chalk = require('chalk');
 
 const prompt = chalk.blue('\nprompt > ');

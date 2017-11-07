@@ -22,16 +22,23 @@ module.exports = {
 
   ls: function(input) {
     fs.readdir('.', function(err, files) {
-      if (err) throw err;
-      files.forEach(function(file) {
-        process.stdout.write(file.toString() + "\n");
-      })
+      if (err) throw err; // WARNING, YOU DON'T WANT SILENT ERRORS, KEY CODE!
+
+      // files.forEach(function(file) {
+      //   process.stdout.write(file.toString() + "\n");
+      // });
+      process.stdout.write(files.join('\n'));
       process.stdout.write("prompt > ");
     });
   },
 
   echo: function(input) {
     return input.split(' ').slice(1).join(' ');
+    // return input.split(' ')
+    //   .map(function(arg) {
+    //     return (arg[0] === '$') ? process.env[arg.slice(1)] : arg;
+    //   })
+    //   .join(' ');
   }
 
   // ls: function() {
